@@ -1,5 +1,8 @@
 <script setup>
-
+const links = [
+  { name: "Home", path: "/" },
+  { name: "API Demo", path: "/api-demo  " },
+]
 </script>
 
 <template>
@@ -11,30 +14,14 @@
         </UBadge>
       </NuxtLink>
       <div class="flex items-center space-x-6">
-        <ULink
-          to="/"
-          active-class="text-primary"
-          inactive-class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
-        >
+        <ULink v-for="link in links" :key="link.path" :to="link.path" active-class="text-primary" inactive-class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
           <UButton color="primary" variant="ghost">
-            Home
+            {{ link.name }}
           </UButton>
         </ULink>
-        <ULink
-          to="/about"
-          active-class="text-primary"
-          inactive-class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
-        >
-          <UButton color="primary" variant="ghost">
-            About
-          </UButton>
-        </ULink>
+
         <AppColorMode />
       </div>
     </header>
   </UContainer>
 </template>
-
-<style lang="scss" scoped>
-
-</style>
