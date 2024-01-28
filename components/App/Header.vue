@@ -1,7 +1,7 @@
 <script setup>
 const links = [
   { name: "Home", path: "/" },
-  { name: "API Demo", path: "/api-demo  " },
+  { name: "API Demo", path: "/demo" },
 ]
 </script>
 
