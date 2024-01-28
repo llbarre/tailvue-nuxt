@@ -1,3 +1,13 @@
+<script setup lang="ts">
+defineOgImageComponent("NuxtSeo", {
+  title: "Welcome to Tailvue Nuxt",
+  description: "Using Nuxt SEO to generate dynamic meta tags",
+})
+definePageMeta({
+  title: "Home",
+})
+</script>
+
 <template>
   <UContainer class="py-8  ">
     <section class="mb-8 flex flex-col justify-between gap-6 sm:gap-10 md:mb-16 md:gap-16 lg:flex-row">
