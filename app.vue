@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  title: "TailVue - Nuxt",
+
   meta: [
     { name: "viewport", content: "width=device-width, initial-scale=1" },
   ],
