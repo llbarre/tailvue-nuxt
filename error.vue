@@ -16,6 +16,9 @@ function handleError() {
           {{ error.statusCode }}
         </h1>
         <p>{{ error.statusMessage }}.</p>
+        <UButton @click="handleError">
+          Go Home
+        </UButton>
       </div>
     </UContainer>
   </NuxtLayout>
