@@ -7,16 +7,18 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "update": "npx taze -w"
   },
   "dependencies": {
-    "@nuxt/ui": "^2.12.3"
+    "@nuxt/ui": "^2.12.3",
+    "@vueuse/nuxt": "^10.7.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.3",
     "netlify-cli": "^17.15.3",
     "nuxt": "^3.9.3",
-    "vue": "^3.4.14",
+    "vue": "^3.4.15",
     "vue-router": "^4.2.5"
   }
 }
